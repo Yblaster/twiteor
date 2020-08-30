@@ -7,8 +7,8 @@ Meteor.users.allow({
   }
 })
 Meteor.users.allow({
-	update: function() {
-		return !!Meteor.userId();
+	update: function(userId, user) {
+		return userId == user._id;
 	}
 })
 
