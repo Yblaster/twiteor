@@ -1,0 +1,9 @@
+<template name="profile">
+<div class="container">
+	{{username}} 
+	{{>user_card user}}
+	{{#each posts}}
+		{{>post}}
+	{{/each}}
+</div>
+</template>

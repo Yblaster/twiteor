@@ -1,0 +1,21 @@
+<template name="post">
+<div class="template-post">
+	<div class="card mb-3">
+	  <div class="card-header"><a href="/profile/{{author}}">{{username}}</a></div>
+	 
+	  <div class="card-body">
+		<p class="card-text">{{content}}</p>
+		<div class="card-footer bg-transparent border-success">{{timestamp}}</div>
+		
+		  <button type="update" id="test1" onclick="show()" class="btn btn-primary" >commentaire</button>
+		  
+		<div id="test">
+			<textarea name="content" placeholder="Ecrivez quelque-chose..." class="form-control"></textarea>
+		</div>
+	  </div>
+	</div>
+</div>
+
+</template>
+
+
